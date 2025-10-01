@@ -206,7 +206,7 @@ sup {
     @media (min-width: 768px) {
         --size: 40px;
     }
-    
+
     @media (min-width: 1200px) {
         --size: 48px;
     }
