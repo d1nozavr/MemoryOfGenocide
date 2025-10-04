@@ -13,6 +13,7 @@ body {
 }
 
 :root {
+  --size: 32px;
   --primary-red: #c62828;
   --dark-red: #8e0000;
   --light-red: #ff5f52;
@@ -86,79 +87,6 @@ nav ul li a:hover {
     background: var(--white);
     transition: 0.3s;
     border-radius: 2px;
-}
-
-/* mobile devices */
-@media (max-width: 768px) {
-    header {
-        padding: 12px 15px;
-    }
-    
-    .header-container {
-        flex-wrap: wrap;
-    }
-    
-    .logo {
-        font-size: 18px;
-    }
-    
-    /* show burger menu */
-    .nav-toggle {
-        display: flex;
-    }
-    
-    /* hide default header */
-    nav {
-        width: 100%;
-        max-height: 0;
-        overflow: hidden;
-        transition: max-height 0.3s ease;
-    }
-    
-    nav.active {
-        max-height: 300px;
-    }
-    
-    nav ul {
-        flex-direction: column;
-        gap: 0;
-        padding-top: 15px;
-    }
-    
-    nav ul li {
-        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-    }
-    
-    nav ul li:last-child {
-        border-bottom: none;
-    }
-    
-    nav ul li a {
-        padding: 15px 10px;
-        font-size: 16px;
-        text-align: center;
-        border-radius: 0;
-    }
-    
-    nav ul li a:hover {
-        background-color: var(--dark-red);
-    }
-}
-
-/* very small screens */
-@media (max-width: 480px) {
-    header {
-        padding: 10px 12px;
-    }
-    
-    .logo {
-        font-size: 16px;
-    }
-    
-    nav ul li a {
-        padding: 12px 10px;
-        font-size: 15px;
-    }
 }
 
 /* animation for burger menu */
@@ -277,20 +205,11 @@ sup {
   justify-content: center;
   font-weight: bold;
 
-  --size: 32px;
   width: var(--size);
   height: var(--size);
   aspect-ratio: 1 / 1;
 
   font-size: calc(var(--size) * 0.5);
-
-  @media (min-width: 768px) {
-    --size: 40px;
-  }
-
-  @media (min-width: 1200px) {
-    --size: 48px;
-  }
 }
 
 .topic-card h3 {
@@ -391,23 +310,6 @@ sup {
 
 .nav-link:hover {
   background-color: var(--dark-red);
-}
-
-/* mobile devices */
-@media (max-width: 768px) {
-  .navigation-links {
-    flex-direction: column;
-    gap: 12px;
-    margin-top: 20px;
-    padding-top: 20px;
-  }
-
-  .nav-link {
-    width: 100%;
-    text-align: center;
-    padding: 14px 20px;
-    font-size: 16px;
-  }
 }
 
 .cards-container {
