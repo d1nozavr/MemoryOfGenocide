@@ -281,6 +281,20 @@ sup {
   color: #2c3e50;
 }
 
+.content-block img {
+  display: block;
+  margin: 10px auto 30px auto;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  transition: all 0.3 ease;
+  max-width: 100%;
+}
+
+.content-block img:hover {
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+}
+
 .navigation-links {
   display: flex;
   justify-content: space-between;
